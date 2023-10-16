@@ -1,6 +1,5 @@
 'use client';
 
-// @ts-ignore
 import { UrlBuilder } from '@bytescale/sdk';
 import { UploadDropzone } from '@bytescale/upload-widget-react';
 import { useState } from 'react';
@@ -26,8 +25,7 @@ export default function Home() {
         onUpdate={({ uploadedFiles }) => {
           if (uploadedFiles.length !== 0) {
             const pdf = uploadedFiles[0];
-            // @ts-ignore
-            const imageName = pdf.originalFile.originalFileName;
+            const imageName = pdf.originalFile.file.name;
             const imageUrl = UrlBuilder.url({
               accountId: pdf.accountId,
               filePath: pdf.filePath,
