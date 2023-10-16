@@ -1,6 +1,6 @@
 # Minimilistic Uploader
 
-A simple Next.js app that uploads a PDF using ByteScale.
+A simple Next.js app that uploads a PDF using Bytescale.
 
 ## Instructions
 
