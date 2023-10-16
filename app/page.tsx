@@ -24,14 +24,14 @@ export default function Home() {
         options={options}
         onUpdate={({ uploadedFiles }) => {
           if (uploadedFiles.length !== 0) {
-            const pdf = uploadedFiles[0];
-            const imageName = pdf.originalFile.file.name;
-            const imageUrl = UrlBuilder.url({
-              accountId: pdf.accountId,
-              filePath: pdf.filePath,
+            const file = uploadedFiles[0];
+            const fileName = file.originalFile.file.name;
+            const fileUrl = UrlBuilder.url({
+              accountId: file.accountId,
+              filePath: file.filePath,
             });
-            setName(imageName);
-            setUrl(imageUrl);
+            setName(fileName);
+            setUrl(fileUrl);
           }
         }}
         onComplete={() => console.log('done')}
