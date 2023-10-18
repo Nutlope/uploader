@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bytescale/upload-widget-react": "^4.9.0",
+    "@bytescale/upload-widget-react": "^4.11.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
